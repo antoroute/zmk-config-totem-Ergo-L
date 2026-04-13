@@ -159,22 +159,28 @@ Pour `à` et `è`, le keymap envoie la sequence de touche morte grave du layout 
 
 ## Mode Jeu
 
-Le mode jeu utilise une disposition QWERTY plus classique.
+Le mode jeu utilise une disposition anglaise pensee pour jouer sur un split column-stagger :
+
+- deplacement sur `WASD`, mais recentre sur la main gauche
+- `A`, `S`, `D` tombent sous les doigts de repos
+- `W` est place au-dessus de `S`
+- `Shift`, `Ctrl` et `Space` deplaces sur les pouces pour eviter de tordre la main gauche
+- `Esc` et `Tab` gardes tres accessibles
 
 Schema `GAME` :
 
 ```text
 +-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  Q  |  W  |  E  |  R  |  T  |  |  Y  |  U  |  I  |  O  |  P  |
+| ESC |  Q  |  W  |  E  |  R  |  |  Y  |  U  |  I  |  O  |  P  |
 +-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  A  |  S  |  D  |  F  |  G  |  |  H  |  J  |  K  |  L  |  ;  |
+| TAB |  A  |  S  |  D  |  F  |  |  H  |  J  |  K  |  L  |  ;  |
 +-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
 |SHIFT|  Z  |  X  |  C  |  V  |  |  B  |  N  |  M  |  ,  |  .  |
 +-----+-----+-----+-----+-----+--+-----+-----+-----+-----+-----+
 | SYS |                                |  /  |
 +-----+                                +-----+
               +-------+-------+-------+  +-------+-------+-------+
-              | LCTRL |  TAB  | SPACE |  | SPACE | ENTER |  ESC  |
+              | SHIFT | SPACE | LCTRL |  | SPACE | SPACE | ENTER |
               +-------+-------+-------+  +-------+-------+-------+
 ```
 
@@ -182,6 +188,14 @@ Activation du mode jeu :
 
 - appuie simultanement sur les deux touches exterieures de la rangee du bas
 - le meme combo desactive aussi `GAME`
+
+Pourquoi ce `WASD` recentre :
+
+- sur une petite split, `WASD` colle trop au bord gauche
+- ici `A`, `S`, `D` sont decales d'une colonne vers le centre
+- cela cale mieux la main sur la position naturelle de repos
+- tu gardes un repere `WASD` classique pour les jeux sans te battre contre le bord gauche du clavier
+- `Space` existe maintenant aussi sur le pouce gauche
 
 ## Couche Systeme
 
