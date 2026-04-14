@@ -1,236 +1,260 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_bright.svg">
-  <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/images/TOTEM_logo_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./docs/images/TOTEM_logo_bright.svg">
+  <img alt="TOTEM logo font" src="./docs/images/TOTEM_logo_bright.svg">
 </picture>
 
-# ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
+# ZMK Config for the TOTEM Split Keyboard
 
-[Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
-[Here](https://github.com/GEIGEIGEIST/qmk-config-totem) you can find the QMK config for the TOTEM.
+Configuration ZMK pour un TOTEM 38 touches avec une disposition principale en Ergo-L, des home row mods, une couche navigation, une couche symboles, une couche systeme pour le Bluetooth et une couche jeu.
 
-TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/) or [QMK](https://docs.qmk.fm/). It's meant to be used with a SEEED XIAO BLE or RP2040.
+Ressources utiles :
 
+- guide hardware TOTEM : <https://github.com/GEIGEIGEIST/totem>
+- config QMK TOTEM : <https://github.com/GEIGEIGEIST/qmk-config-totem>
+- documentation ZMK : <https://zmk.dev/>
 
-![TOTEM layout](/docs/images/TOTEM_layout.svg)
+![TOTEM layout](./docs/images/TOTEM_layout.svg)
 
+## Vue d'ensemble
 
+- clavier : TOTEM split 38 touches
+- firmware : ZMK
+- microcontroleur cible : SEEED XIAO BLE
+- moitie centrale : gauche
+- disposition principale : Ergo-L
+- langue cible : `US-International`
 
-## HOW TO USE
+## Demarrage Rapide
 
-- fork this repo
-- `git clone` your repo, to create a local copy on your PC (you can use the [command line](https://www.atlassian.com/git/tutorials) or [github desktop](https://desktop.github.com/))
-- adjust the totem.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
-- `git push` your repo to your fork
-- on the GitHub page of your fork navigate to "Actions"
-- scroll down and unzip the `firmware.zip` archive that contains the latest firmware
-- connect the left half of the TOTEM to your PC, press reset twice
-- the keyboard should now appear as a mass storage device
-- drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
-- repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+1. fork ce repo
+2. modifie [`config/totem.keymap`](./config/totem.keymap)
+3. pousse sur ton fork
+4. ouvre l'onglet `Actions` sur GitHub
+5. telecharge puis dezippe `firmware.zip`
+6. flashe `totem_left-seeeduino_xiao_ble-zmk.uf2` sur la moitie gauche
+7. flashe `totem_right-seeeduino_xiao_ble-zmk.uf2` sur la moitie droite
 
-## Guide Clair
+Important :
 
-Ce keymap est pense pour un TOTEM 38 touches avec :
+- ne melange pas `left` et `right` au flash
+- un firmware gauche charge sur la droite, ou l'inverse, donne un clavier incoherent
 
-- une couche principale en Ergo-L
-- des home row mods en `GASC`
-- une couche `NAV` pour la navigation et les chiffres
-- une couche `SYM` pour les symboles et les accents
-- une couche `SYS` pour Bluetooth, bootloader et systeme
-- une couche `GAME` en QWERTY pour jouer
-- un fonctionnement base sur le clavier systeme `US-International`
+Fichiers generes par le build :
+
+| Fichier | Usage |
+| --- | --- |
+| `totem_left-seeeduino_xiao_ble-zmk.uf2` | firmware normal pour la moitie gauche |
+| `totem_right-seeeduino_xiao_ble-zmk.uf2` | firmware normal pour la moitie droite |
+| `settings_reset-seeeduino_xiao_ble-zmk.uf2` | firmware temporaire pour vider les settings Bluetooth |
+
+## Philosophie du Keymap
+
+| Couche | Acces | Role |
+| --- | --- | --- |
+| `BASE` | par defaut | frappe principale en Ergo-L |
+| `NAV` | maintenir `NAV/BSPC` | chiffres, fleches, navigation |
+| `SYM` | maintenir `SYM/DEL` | symboles et accents |
+| `SYS` | maintenir `SYS` | Bluetooth, bootloader, reset, sortie USB/BLE |
+| `GAME` | combo des 2 touches externes du bas | disposition jeu |
 
 ## Reglage Systeme
 
-Pour que les accents fonctionnent comme prevu, il faut configurer le systeme d'exploitation en `US-International`.
+Pour que les accents fonctionnent comme prevu, configure le systeme en `US-International`.
 
 ### Windows
 
 - `Parametres > Heure et langue > Langue et region`
-- ouvrir la langue active
+- ouvre la langue active
 - `Ajouter un clavier`
-- choisir `United States-International`
-- basculer de disposition avec `Win + Espace`
+- choisis `United States-International`
+- bascule de disposition avec `Win + Espace`
 
 ### macOS
 
-- ajouter `U.S. International - PC`
+- ajoute `U.S. International - PC`
 
 ### Linux
 
-- choisir `English (US, intl., with dead keys)` ou l'equivalent
+- choisis `English (US, intl., with dead keys)` ou l'equivalent
 
-## Schema Base
+## Legende
 
-Couche `BASE` en Ergo-L :
+- `A/GUI` : tape `A`, maintiens `GUI`
+- `S/ALT` : tape `S`, maintiens `Alt`
+- `E/SFT` : tape `E`, maintiens `Shift`
+- `N/CTL` : tape `N`, maintiens `Control`
+- `NAV/BSPC` : tape `Backspace`, maintiens `NAV`
+- `SYM/DEL` : tape `Delete`, maintiens `SYM`
+- `AltGr` : `Right Alt` sticky
+- `SYS` : acces momentane a la couche systeme
+
+## Couche BASE
+
+Disposition principale en Ergo-L.
 
 ```text
-gauche                           droite
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  Q  |  C  |  O  |  P  |  W  |  |  J  |  M  |  D  |  '  |  Y  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|A/GUI|S/ALT|E/SFT|N/CTL|  F  |  |  L  |R/CTL|T/SFT|I/ALT|U/GUI|
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-| ESC |  Z  |  X  |  -  |  V  |  |  B  |  H  |  G  |  ,  |  .  |
-+-----+-----+-----+-----+-----+--+-----+-----+-----+-----+-----+
-| SYS |                                |  K  |
-+-----+                                +-----+
-              +-------+-------+-------+  +-------+-------+-------+
-              |  TAB  |NAV/BSP| SPACE |  | ENTER |SYM/DEL| AltGr |
-              +-------+-------+-------+  +-------+-------+-------+
+main rows
+[  Q   ] [  C   ] [  O   ] [  P   ] [  W   ]      [  J   ] [  M   ] [  D   ] [  '   ] [  Y   ]
+[A/GUI] [S/ALT] [E/SFT] [N/CTL] [  F   ]      [  L   ] [R/CTL] [T/SFT] [I/ALT] [U/GUI]
+
+bottom row
+[ SYS  ] [ ESC  ] [  Z   ] [  X   ] [  -   ] [  V   ]      [  B   ] [  H   ] [  G   ] [  ,   ] [  .   ] [  K   ]
+
+thumbs
+[ TAB ] [NAV/BSPC] [ SPACE ]                        [ ENTER ] [SYM/DEL] [ AltGr ]
 ```
 
 ## Home Row Mods
 
 Les touches de repos portent les modificateurs :
 
-- gauche : `A=Gui`, `S=Alt`, `E=Shift`, `N=Control`
-- droite : `R=Control`, `T=Shift`, `I=Alt`, `U=Gui`
+- main gauche : `A=GUI`, `S=Alt`, `E=Shift`, `N=Control`
+- main droite : `R=Control`, `T=Shift`, `I=Alt`, `U=GUI`
 
 Reglage actuel :
 
 - `tapping-term-ms = 200`
 - `flavor = "tap-preferred"`
 
-Conseil d'usage :
+Conseils :
 
 - tape rapidement pour obtenir la lettre
 - maintiens legerement plus longtemps pour obtenir le modificateur
-- si tu as trop d'activations accidentelles, augmente `tapping-term-ms` vers `220` ou `230`
+- si tu as trop d'activations accidentelles, essaie `220` ou `230`
 
-## Schema Navigation
+## Couche NAV
 
-Couche `NAV` via le thumb gauche `NAV/BSPC` :
-
-```text
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  1  |  2  |  3  |  4  |  5  |  |  6  |  7  |  8  |  9  |  0  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-| TAB |HOME |PGDN |PGUP | END |  |LEFT |DOWN |  UP |RGHT | DEL |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|     |     |     |     |     |  |     |     |     |     |     |
-+-----+-----+-----+-----+-----+--+-----+-----+-----+-----+-----+
-| SYS |                                |     |
-+-----+                                +-----+
-```
-
-## Schema Symboles
-
-Couche `SYM` via le thumb droit `SYM/DEL` :
+Acces : maintenir `NAV/BSPC`.
 
 ```text
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  !  |  @  |  #  |  $  |  %  |  |  ^  |  &  |  *  |  =  |  +  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|  (  |  [  |  {  |  `  |  '  |  |  -  |  }  |  ]  |  )  |  "  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|     |  \  |  /  |  ,  |  .  |  |  ;  |  '  |  ç  |  é  |  à  |
-+-----+-----+-----+-----+-----+--+-----+-----+-----+-----+-----+
-| SYS |                                |  è  |
-+-----+                                +-----+
+main rows
+[  1  ] [  2  ] [  3  ] [  4  ] [  5  ]      [  6  ] [  7  ] [  8  ] [  9  ] [  0  ]
+[ TAB ] [HOME ] [PGDN ] [PGUP ] [ END ]      [LEFT ] [DOWN ] [  UP ] [RGHT ] [ DEL ]
+
+bottom row
+[ SYS ] [ --- ] [ --- ] [ --- ] [ --- ] [ --- ]      [ --- ] [ --- ] [ --- ] [ --- ] [ --- ] [ --- ]
 ```
+
+`---` signifie transparent : la touche laisse passer le comportement d'une autre couche si besoin.
+
+## Couche SYM
+
+Acces : maintenir `SYM/DEL`.
+
+```text
+main rows
+[  !  ] [  @  ] [  #  ] [  $  ] [  %  ]      [  ^  ] [  &  ] [  *  ] [  =  ] [  +  ]
+[  (  ] [ LBKT] [ LBRC] [  `  ] [  '  ]      [  -  ] [ RBRC] [ RBKT] [  )  ] [  "  ]
+
+bottom row
+[ SYS ] [ --- ] [  \  ] [  /  ] [  ,  ] [  .  ]      [  ;  ] [  '  ] [C ced] [E acu] [A gra] [E gra]
+```
+
+Raccourcis utiles sur cette couche :
+
+- `C ced` : `c cedilla`
+- `E acu` : `e acute`
+- `A gra` : `a grave`
+- `E gra` : `e grave`
 
 ## Accents Francais
 
 Deux methodes sont prevues.
 
-### 1. Combos rapides
+### Combos rapides
 
-- `A + S = à`
-- `E + R = é`
-- `I + O = è`
+- `A + S -> a grave`
+- `E + R -> e acute`
+- `I + O -> e grave`
 
-Ces combos sont actifs sur la couche `BASE`.
+Ces combos sont actifs sur `BASE`.
 
-### 2. AltGr et couche SYM
+### AltGr et couche SYM
 
-Le thumb droit externe est un `AltGr` sticky :
+Le thumb droit externe agit comme un `AltGr` sticky :
 
-- touche une fois `AltGr`
-- puis tape la touche cible
+1. touche `AltGr`
+2. tape la touche cible
 
 Exemples utiles avec `US-International` :
 
-- `AltGr + E = é`
-- `AltGr + C = ç`
+- `AltGr + E -> e acute`
+- `AltGr + C -> c cedilla`
 
-Pour `à` et `è`, le keymap envoie la sequence de touche morte grave du layout `US-International`.
+Pour `a grave` et `e grave`, le keymap envoie la sequence de touche morte grave du layout `US-International`.
 
-## Mode Jeu
+## Couche GAME
 
-Le mode jeu utilise une disposition anglaise pensee pour jouer sur un split column-stagger :
-
-- deplacement sur `WASD`, mais recentre sur la main gauche
-- `A`, `S`, `D` tombent sous les doigts de repos
-- `W` est place au-dessus de `S`
-- `Shift`, `Ctrl` et `Space` deplaces sur les pouces pour eviter de tordre la main gauche
-- `Esc` et `Tab` gardes tres accessibles
-
-Schema `GAME` :
+Disposition jeu recentree pour mieux tomber sous la main gauche.
 
 ```text
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-| ESC |  Q  |  W  |  E  |  R  |  |  Y  |  U  |  I  |  O  |  P  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-| TAB |  A  |  S  |  D  |  F  |  |  H  |  J  |  K  |  L  |  ;  |
-+-----+-----+-----+-----+-----+  +-----+-----+-----+-----+-----+
-|SHIFT|  Z  |  X  |  C  |  V  |  |  B  |  N  |  M  |  ,  |  .  |
-+-----+-----+-----+-----+-----+--+-----+-----+-----+-----+-----+
-| SYS |                                |  /  |
-+-----+                                +-----+
-              +-------+-------+-------+  +-------+-------+-------+
-              | SHIFT | SPACE | LCTRL |  | SPACE | SPACE | ENTER |
-              +-------+-------+-------+  +-------+-------+-------+
+main rows
+[ ESC ] [  Q  ] [  W  ] [  E  ] [  R  ]      [  Y  ] [  U  ] [  I  ] [  O  ] [  P  ]
+[ TAB ] [  A  ] [  S  ] [  D  ] [  F  ]      [  H  ] [  J  ] [  K  ] [  L  ] [  ;  ]
+
+bottom row
+[ SYS ] [SFT ] [  Z  ] [  X  ] [  C  ] [  V  ]      [  B  ] [  N  ] [  M  ] [  ,  ] [  .  ] [  /  ]
+
+thumbs
+[SFT ] [ SPACE ] [LCTRL]                        [ SPACE ] [ SPACE ] [ ENTER ]
 ```
 
-Activation du mode jeu :
+Activation :
 
-- appuie simultanement sur les deux touches exterieures de la rangee du bas
+- appuie simultanement sur les 2 touches externes de la rangee du bas
 - le meme combo desactive aussi `GAME`
 
-Pourquoi ce `WASD` recentre :
+Pourquoi ce choix :
 
-- sur une petite split, `WASD` colle trop au bord gauche
-- ici `A`, `S`, `D` sont decales d'une colonne vers le centre
-- cela cale mieux la main sur la position naturelle de repos
-- tu gardes un repere `WASD` classique pour les jeux sans te battre contre le bord gauche du clavier
-- `Space` existe maintenant aussi sur le pouce gauche
+- `WASD` est plus recentre
+- `A`, `S`, `D` tombent mieux sous les doigts de repos
+- `Shift`, `Ctrl` et `Space` sont plus accessibles sur les pouces
 
-## Couche Systeme
+## Couche SYS
 
-La couche `SYS` est accessible avec la touche exterieure basse `SYS`.
+Acces : maintenir `SYS`.
 
-Fonctions presentes :
+Touches actives :
 
-- `BT_SEL 0` a `BT_SEL 3`
-- `BT_CLR`
-- `BOOTLOADER`
-- `SYS_RESET`
-- `OUT_TOG`
+```text
+row 1
+[BT 0] [BT 1] [BT 2] [BT 3] [BT CLR]
+
+row 2
+[BOOT] [RESET] [OUT TOG]
+```
+
+Rappel :
+
+- `BT 0` a `BT 3` selectionnent le profil Bluetooth
+- `BT CLR` efface le profil Bluetooth courant
+- `BOOT` entre dans le bootloader
+- `RESET` redemarre le clavier
+- `OUT TOG` bascule la sortie preferee entre `USB` et `BLE`
 
 ## Depannage Bluetooth
 
-Rien dans cette config ne coupe le Bluetooth: le point le plus fragile sur un split ZMK reste en general l'etat persistant des pairages (`bonds`) apres plusieurs flashes.
+Si le clavier apparait mais refuse de se connecter, ou si le systeme affiche une erreur vague :
 
-Si le clavier apparait mais refuse de se connecter, ou si le PC affiche une erreur vague/inconnue :
+1. supprime le clavier cote systeme avec `Oublier cet appareil`
+2. flashe `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie gauche
+3. flashe `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie droite
+4. reflashe `totem_left-seeeduino_xiao_ble-zmk.uf2` sur la gauche
+5. reflashe `totem_right-seeeduino_xiao_ble-zmk.uf2` sur la droite
+6. redemarre les 2 moities a peu pres en meme temps
+7. repars sur `BT 0` pour un nouveau pairing
 
-1. supprimer le clavier cote systeme (`Oublier cet appareil`) sur l'ordinateur
-2. flasher `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie gauche
-3. flasher le meme firmware `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie droite
-4. reflasher ensuite `totem_left-seeeduino_xiao_ble-zmk.uf2` sur la gauche et `totem_right-seeeduino_xiao_ble-zmk.uf2` sur la droite
-5. redemarrer les deux moities a peu pres en meme temps
-6. reconnecter le clavier en choisissant un profil `BT_SEL 0` a `BT_SEL 3`
+Points utiles :
 
-Notes utiles :
-
-- `BT_CLR` efface le profil Bluetooth courant du clavier
-- `OUT_TOG` bascule la sortie preferee entre `USB` et `BLE`
-- si le clavier est branche en USB pendant les tests, ZMK prefere souvent `USB`; il peut alors falloir faire `OUT_TOG` pour retester le Bluetooth
-- le firmware `settings_reset` desactive temporairement le Bluetooth: c'est normal, il sert uniquement a vider les settings avant de reflasher le firmware normal
+- le firmware `settings_reset` desactive temporairement le Bluetooth, c'est normal
+- si le clavier est branche en USB pendant les tests, pense a faire `OUT TOG` pour retester en BLE
+- en split ZMK, les problemes de connexion viennent souvent d'anciens pairages restes en memoire
 
 ## Fichiers Utiles
 
 - keymap principal : [`config/totem.keymap`](./config/totem.keymap)
 - configuration clavier : [`config/totem.conf`](./config/totem.conf)
+- matrix de build GitHub : [`build.yaml`](./build.yaml)
+- shield TOTEM : [`config/boards/shields/totem`](./config/boards/shields/totem)
 - schema materiel : [`docs/images/TOTEM_layout.svg`](./docs/images/TOTEM_layout.svg)

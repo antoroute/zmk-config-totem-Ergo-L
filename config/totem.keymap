@@ -83,7 +83,7 @@
             bindings = <
                 &kp Q           &kp C           &kp O           &kp P           &kp W           &kp J           &kp M           &kp D           &kp SQT         &kp Y
                 &mt LGUI A      &mt LALT S      &mt LSHFT E     &mt LCTRL N     &kp F           &kp L           &mt RCTRL R     &mt RSHFT T     &mt RALT I      &mt RGUI U
-                &kp ESC         &kp Z           &kp X           &kp MINUS       &kp V           &kp B           &kp H           &kp G           &kp COMMA       &kp DOT         &kp K           &mo SYS
+                &mo SYS         &kp ESC         &kp Z           &kp X           &kp MINUS       &kp V           &kp B           &kp H           &kp G           &kp COMMA       &kp DOT         &kp K
                                                 &kp TAB         &lt NAV BSPC     &kp SPACE       &kp RET         &lt SYM DEL       &sk RALT
             >;
         };
@@ -93,7 +93,7 @@
             bindings = <
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
                 &kp TAB         &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp DEL
-                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &mo SYS
+                &mo SYS         &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
         };
@@ -103,7 +103,7 @@
             bindings = <
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT       &kp CARET       &kp AMPS        &kp STAR        &kp EQUAL       &kp PLUS
                 &kp LPAR        &kp LBKT        &kp LBRC        &kp GRAVE       &kp SQT         &kp MINUS       &kp RBRC        &kp RBKT        &kp RPAR        &kp DQT
-                &trans          &kp BSLH        &kp FSLH        &kp COMMA       &kp DOT         &kp SEMI        &kp SQT         &kp RA(C)       &kp RA(E)       &fr_a_grave     &fr_e_grave     &mo SYS
+                &mo SYS         &trans          &kp BSLH        &kp FSLH        &kp COMMA       &kp DOT         &kp SEMI        &kp SQT         &kp RA(C)       &kp RA(E)       &fr_a_grave     &fr_e_grave
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
         };
@@ -123,7 +123,7 @@
             bindings = <
                 &kp ESC         &kp Q           &kp W           &kp E           &kp R           &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &mo SYS
+                &mo SYS         &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH
                                                 &kp LSHFT       &kp SPACE       &kp LCTRL       &kp SPACE       &kp SPACE       &kp RET
             >;
         };
