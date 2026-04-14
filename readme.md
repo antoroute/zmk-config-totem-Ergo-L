@@ -209,6 +209,26 @@ Fonctions presentes :
 - `SYS_RESET`
 - `OUT_TOG`
 
+## Depannage Bluetooth
+
+Rien dans cette config ne coupe le Bluetooth: le point le plus fragile sur un split ZMK reste en general l'etat persistant des pairages (`bonds`) apres plusieurs flashes.
+
+Si le clavier apparait mais refuse de se connecter, ou si le PC affiche une erreur vague/inconnue :
+
+1. supprimer le clavier cote systeme (`Oublier cet appareil`) sur l'ordinateur
+2. flasher `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie gauche
+3. flasher le meme firmware `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur la moitie droite
+4. reflasher ensuite `totem_left-seeeduino_xiao_ble-zmk.uf2` sur la gauche et `totem_right-seeeduino_xiao_ble-zmk.uf2` sur la droite
+5. redemarrer les deux moities a peu pres en meme temps
+6. reconnecter le clavier en choisissant un profil `BT_SEL 0` a `BT_SEL 3`
+
+Notes utiles :
+
+- `BT_CLR` efface le profil Bluetooth courant du clavier
+- `OUT_TOG` bascule la sortie preferee entre `USB` et `BLE`
+- si le clavier est branche en USB pendant les tests, ZMK prefere souvent `USB`; il peut alors falloir faire `OUT_TOG` pour retester le Bluetooth
+- le firmware `settings_reset` desactive temporairement le Bluetooth: c'est normal, il sert uniquement a vider les settings avant de reflasher le firmware normal
+
 ## Fichiers Utiles
 
 - keymap principal : [`config/totem.keymap`](./config/totem.keymap)
