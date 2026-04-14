@@ -88,22 +88,14 @@ Pour que les accents fonctionnent comme prevu, configure le systeme en `US-Inter
 - `SYM/DEL` : tape `Delete`, maintiens `SYM`
 - `AltGr` : `Right Alt` sticky
 - `SYS` : acces momentane a la couche systeme
+- dans les images, le texte blanc indique l'action en tap
+- dans les images, le texte bleu indique l'action au maintien
 
 ## Couche BASE
 
 Disposition principale en Ergo-L.
 
-```text
-main rows
-[  Q   ] [  C   ] [  O   ] [  P   ] [  W   ]      [  J   ] [  M   ] [  D   ] [  '   ] [  Y   ]
-[A/GUI] [S/ALT] [E/SFT] [N/CTL] [  F   ]      [  L   ] [R/CTL] [T/SFT] [I/ALT] [U/GUI]
-
-bottom row
-[ SYS  ] [ ESC  ] [  Z   ] [  X   ] [  -   ] [  V   ]      [  B   ] [  H   ] [  G   ] [  ,   ] [  .   ] [  K   ]
-
-thumbs
-[ TAB ] [NAV/BSPC] [ SPACE ]                        [ ENTER ] [SYM/DEL] [ AltGr ]
-```
+![Couche BASE](./docs/images/TOTEM_layer_base.svg)
 
 ## Home Row Mods
 
@@ -127,29 +119,21 @@ Conseils :
 
 Acces : maintenir `NAV/BSPC`.
 
-```text
-main rows
-[  1  ] [  2  ] [  3  ] [  4  ] [  5  ]      [  6  ] [  7  ] [  8  ] [  9  ] [  0  ]
-[ TAB ] [HOME ] [PGDN ] [PGUP ] [ END ]      [LEFT ] [DOWN ] [  UP ] [RGHT ] [ DEL ]
+![Couche NAV](./docs/images/TOTEM_layer_nav.svg)
 
-bottom row
-[ SYS ] [ --- ] [ --- ] [ --- ] [ --- ] [ --- ]      [ --- ] [ --- ] [ --- ] [ --- ] [ --- ] [ --- ]
-```
+Sur cette image, les touches sans label sont transparentes : elles laissent passer le comportement d'une autre couche si besoin.
 
-`---` signifie transparent : la touche laisse passer le comportement d'une autre couche si besoin.
+Raccourcis utiles sur `NAV` :
+
+- `Ctrl + Left/Right` : deplacement mot par mot
+- `Shift + fleches` : selection de texte
+- `Ctrl + Shift + Left/Right` : selection mot par mot
 
 ## Couche SYM
 
 Acces : maintenir `SYM/DEL`.
 
-```text
-main rows
-[  !  ] [  @  ] [  #  ] [  $  ] [  %  ]      [  ^  ] [  &  ] [  *  ] [  =  ] [  +  ]
-[  (  ] [ LBKT] [ LBRC] [  `  ] [  '  ]      [  -  ] [ RBRC] [ RBKT] [  )  ] [  "  ]
-
-bottom row
-[ SYS ] [ --- ] [  \  ] [  /  ] [  ,  ] [  .  ]      [  ;  ] [  '  ] [C ced] [E acu] [A gra] [E gra]
-```
+![Couche SYM](./docs/images/TOTEM_layer_sym.svg)
 
 Raccourcis utiles sur cette couche :
 
@@ -188,17 +172,7 @@ Pour `a grave` et `e grave`, le keymap envoie la sequence de touche morte grave 
 
 Disposition jeu recentree pour mieux tomber sous la main gauche.
 
-```text
-main rows
-[ ESC ] [  Q  ] [  W  ] [  E  ] [  R  ]      [  Y  ] [  U  ] [  I  ] [  O  ] [  P  ]
-[ TAB ] [  A  ] [  S  ] [  D  ] [  F  ]      [  H  ] [  J  ] [  K  ] [  L  ] [  ;  ]
-
-bottom row
-[ SYS ] [SFT ] [  Z  ] [  X  ] [  C  ] [  V  ]      [  B  ] [  N  ] [  M  ] [  ,  ] [  .  ] [  /  ]
-
-thumbs
-[SFT ] [ SPACE ] [LCTRL]                        [ SPACE ] [ SPACE ] [ ENTER ]
-```
+![Couche GAME](./docs/images/TOTEM_layer_game.svg)
 
 Activation :
 
@@ -215,15 +189,7 @@ Pourquoi ce choix :
 
 Acces : maintenir `SYS`.
 
-Touches actives :
-
-```text
-row 1
-[BT 0] [BT 1] [BT 2] [BT 3] [BT CLR]
-
-row 2
-[BOOT] [RESET] [OUT TOG]
-```
+![Couche SYS](./docs/images/TOTEM_layer_sys.svg)
 
 Rappel :
 
@@ -258,3 +224,4 @@ Points utiles :
 - matrix de build GitHub : [`build.yaml`](./build.yaml)
 - shield TOTEM : [`config/boards/shields/totem`](./config/boards/shields/totem)
 - schema materiel : [`docs/images/TOTEM_layout.svg`](./docs/images/TOTEM_layout.svg)
+- generateur des schemas README : [`scripts/generate-readme-svgs.ps1`](./scripts/generate-readme-svgs.ps1)
