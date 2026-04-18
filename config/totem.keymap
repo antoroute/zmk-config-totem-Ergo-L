@@ -55,14 +55,14 @@
 
         combo_a_grave {
             timeout-ms = <100>;
-            key-positions = <10 11>;
+            key-positions = <10 24>;
             bindings = <&fr_a_grave>;
             layers = <BASE>;
         };
 
         combo_e_grave {
             timeout-ms = <100>;
-            key-positions = <18 2>;
+            key-positions = <12 24>;
             bindings = <&fr_e_grave>;
             layers = <BASE>;
         };

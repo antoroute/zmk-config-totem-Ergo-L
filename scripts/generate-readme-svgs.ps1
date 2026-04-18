@@ -139,10 +139,9 @@ function Get-KeyOverlay {
         $line = $lines[0]
         $fillColor = if ($line.Tone -eq "hold") { "#58a6ff" } else { "#f0f6fc" }
         $fontSize = Get-SingleFontSize -Text $line.Text
-        $textParts += '<text x="{0}" y="{1}"{2} fill="{3}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="{4}" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">{5}</text>' -f `
+        $textParts += '<text x="{0}" y="{1}" fill="{2}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="{3}" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">{4}</text>' -f `
             ([string]::Format($culture, "{0:0.##}", $centerX)),
             ([string]::Format($culture, "{0:0.##}", $centerY)),
-            $transform,
             $fillColor,
             ([string]::Format($culture, "{0:0.##}", $fontSize)),
             [System.Security.SecurityElement]::Escape($line.Text)
@@ -161,10 +160,9 @@ function Get-KeyOverlay {
             }
 
             $lineY = $centerY + $topOffset + ($gap * $i)
-            $textParts += '<text x="{0}" y="{1}"{2} fill="{3}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="{4}" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">{5}</text>' -f `
+            $textParts += '<text x="{0}" y="{1}" fill="{2}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="{3}" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">{4}</text>' -f `
                 ([string]::Format($culture, "{0:0.##}", $centerX)),
                 ([string]::Format($culture, "{0:0.##}", $lineY)),
-                $transform,
                 $fillColor,
                 ([string]::Format($culture, "{0:0.##}", $fontSize)),
                 [System.Security.SecurityElement]::Escape($line.Text)

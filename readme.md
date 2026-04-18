@@ -148,9 +148,9 @@ Deux methodes sont prevues.
 
 ### Combos rapides
 
-- `A + S -> a grave`
+- `A + - -> a grave`
 - `E + R -> e acute`
-- `I + O -> e grave`
+- `E + - -> e grave`
 
 Ces combos sont actifs sur `BASE`.
 
