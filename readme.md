@@ -142,6 +142,8 @@ Raccourcis utiles sur cette couche :
 - `A gra` : `a grave`
 - `E gra` : `e grave`
 
+Ces sorties sont envoyees comme sequences d'accent dans le firmware, avec une petite temporisation pour etre correctement interpretees en Bluetooth.
+
 ## Accents Francais
 
 Deux methodes sont prevues.
@@ -166,7 +168,7 @@ Exemples utiles avec `US-International` :
 - `AltGr + E -> e acute`
 - `AltGr + C -> c cedilla`
 
-Pour `a grave` et `e grave`, le keymap envoie la sequence de touche morte grave du layout `US-International`.
+Dans le keymap, `e acute`, `a grave` et `e grave` sont envoyes comme sequences de touches mortes du layout `US-International` avec temporisation (`' + e`, `` ` + a``, `` ` + e``).
 
 ## Couche GAME
 

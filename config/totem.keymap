@@ -26,9 +26,21 @@
 
 / {
     macros {
+        fr_e_acute: fr_e_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap &kp SQT &kp E>
+                ;
+        };
+
         fr_a_grave: fr_a_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_tap &kp GRAVE &kp A>
                 ;
@@ -37,6 +49,8 @@
         fr_e_grave: fr_e_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_tap &kp GRAVE &kp E>
                 ;
@@ -49,7 +63,7 @@
         combo_e_acute {
             timeout-ms = <100>;
             key-positions = <12 16>;
-            bindings = <&kp RA(E)>;
+            bindings = <&fr_e_acute>;
             layers = <BASE>;
         };
 
@@ -103,7 +117,7 @@
             bindings = <
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT       &kp CARET       &kp AMPS        &kp STAR        &kp EQUAL       &kp PLUS
                 &kp LPAR        &kp LBKT        &kp LBRC        &kp GRAVE       &kp SQT         &kp MINUS       &kp RBRC        &kp RBKT        &kp RPAR        &kp DQT
-                &mo SYS         &trans          &kp BSLH        &kp FSLH        &kp COMMA       &kp DOT         &kp SEMI        &kp SQT         &kp RA(C)       &kp RA(E)       &fr_a_grave     &fr_e_grave
+                &mo SYS         &trans          &kp BSLH        &kp FSLH        &kp COMMA       &kp DOT         &kp SEMI        &kp SQT         &kp RA(C)       &fr_e_acute     &fr_a_grave     &fr_e_grave
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
         };
