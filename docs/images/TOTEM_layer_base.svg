@@ -169,7 +169,7 @@
     <rect x="531.03" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.14" stroke="none"/>
     <text x="550.17" y="121.6" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">G</text>
     <rect x="494.25" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.14" stroke="none"/>
-    <text x="513.39" y="204.16" fill="#58a6ff" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="9.2" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">AltGr</text>
+    <text x="513.39" y="204.16" fill="#58a6ff" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">RAlt</text>
     <rect x="590.72" y="34.56" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(512.44 656.9) rotate(-86)" fill="#58a6ff" fill-opacity="0.14" stroke="none"/>
     <text x="608.44" y="54.2" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">&apos;</text>
     <rect x="587.32" y="82.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(461.29 698.25) rotate(-86)" fill="#58a6ff" fill-opacity="0.14" stroke="none"/>

@@ -213,7 +213,7 @@ $baseLabels = Set-RectLabels -VisualOrderLabels @(
     (One "Q"), (One "C"), (One "O"), (One "P"), (One "W"), (One "J"), (One "M"), (One "D"), (One "'"), (One "Y"),
     (Dual "A" "GUI"), (Dual "S" "ALT"), (Dual "E" "SFT"), (Dual "N" "CTL"), (One "F"), (One "L"), (Dual "R" "CTL"), (Dual "T" "SFT"), (Dual "I" "ALT"), (Dual "U" "GUI"),
     (One "SYS" "hold"), (One "ESC"), (One "Z"), (One "X"), (One "-"), (One "V"), (One "B"), (One "H"), (One "G"), (One ","), (One "."), (One "K"),
-    (One "TAB"), (Dual "BSPC" "NAV"), (One "SPACE"), (One "ENTER"), (Dual "DEL" "SYM"), (One "AltGr" "hold")
+    (One "TAB"), (Dual "BSPC" "NAV"), (One "SPACE"), (One "ENTER"), (Dual "DEL" "SYM"), (One "RAlt" "hold")
 )
 
 $navLabels = Set-RectLabels -VisualOrderLabels @(
@@ -232,7 +232,7 @@ $symLabels = Set-RectLabels -VisualOrderLabels @(
 
 $sysLabels = Set-RectLabels -VisualOrderLabels @(
     (Stack @("BT", "0")), (Stack @("BT", "1")), (Stack @("BT", "2")), (Stack @("BT", "3")), (Stack @("BT", "CLR")),
-    $null, $null, $null, $null, $null,
+    (Stack @("NUM", "LOCK")), $null, $null, $null, $null,
     (One "BOOT"), (One "RESET"), (Stack @("OUT", "TOG")), $null, $null,
     $null, $null, $null, $null, $null,
     $null, $null, $null, $null, $null, $null, $null, $null, $null, $null, $null, $null,

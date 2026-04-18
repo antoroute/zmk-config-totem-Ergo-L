@@ -23,7 +23,7 @@ Ressources utiles :
 - microcontroleur cible : SEEED XIAO BLE
 - moitie centrale : gauche
 - disposition principale : Ergo-L
-- langue cible : `US-International`
+- langue cible : `English (United States)` sur Windows
 
 ## Demarrage Rapide
 
@@ -60,23 +60,24 @@ Fichiers generes par le build :
 
 ## Reglage Systeme
 
-Pour que les accents fonctionnent comme prevu, configure le systeme en `US-International`.
+La version actuelle de ce keymap cible Windows avec la disposition `English (United States)`.
+
+Les accents `é`, `è`, `à` et `ç` sont envoyes directement par le firmware via des Alt codes Windows.
+
+Important :
+
+- garde la disposition systeme en `English (United States)`
+- assure-toi que `NumLock` est actif, car Windows n'accepte les Alt codes qu'avec le pave numerique
+- si les accents sortent encore mal, active `NumLock` depuis la couche `SYS`, puis reteste dans le Bloc-notes Windows
+- ce comportement d'accents n'est pas garanti tel quel sur macOS ou Linux
 
 ### Windows
 
 - `Parametres > Heure et langue > Langue et region`
 - ouvre la langue active
 - `Ajouter un clavier`
-- choisis `United States-International`
+- choisis `English (United States)`
 - bascule de disposition avec `Win + Espace`
-
-### macOS
-
-- ajoute `U.S. International - PC`
-
-### Linux
-
-- choisis `English (US, intl., with dead keys)` ou l'equivalent
 
 ## Legende
 
@@ -86,7 +87,7 @@ Pour que les accents fonctionnent comme prevu, configure le systeme en `US-Inter
 - `N/CTL` : tape `N`, maintiens `Control`
 - `NAV/BSPC` : tape `Backspace`, maintiens `NAV`
 - `SYM/DEL` : tape `Delete`, maintiens `SYM`
-- `AltGr` : `Right Alt` sticky
+- `RAlt` : `Right Alt` sticky
 - `SYS` : acces momentane a la couche systeme
 - dans les images, le texte blanc indique l'action en tap
 - dans les images, le texte bleu indique l'action au maintien
@@ -142,7 +143,7 @@ Raccourcis utiles sur cette couche :
 - `A gra` : `a grave`
 - `E gra` : `e grave`
 
-Ces sorties sont envoyees comme sequences d'accent dans le firmware, avec une petite temporisation pour etre correctement interpretees en Bluetooth.
+Ces sorties sont envoyees directement par le firmware pour Windows, avec une petite temporisation pour etre correctement interpretees en Bluetooth.
 
 ## Accents Francais
 
@@ -156,19 +157,16 @@ Deux methodes sont prevues.
 
 Ces combos sont actifs sur `BASE`.
 
-### AltGr et couche SYM
+### Touches dediees sur SYM
 
-Le thumb droit externe agit comme un `AltGr` sticky :
+La couche `SYM` contient aussi des touches directes pour :
 
-1. touche `AltGr`
-2. tape la touche cible
+- `c cedilla`
+- `e acute`
+- `a grave`
+- `e grave`
 
-Exemples utiles avec `US-International` :
-
-- `AltGr + E -> e acute`
-- `AltGr + C -> c cedilla`
-
-Dans le keymap, `e acute`, `a grave` et `e grave` sont envoyes comme sequences de touches mortes du layout `US-International` avec temporisation (`' + e`, `` ` + a``, `` ` + e``).
+Dans cette version du firmware, ces caracteres sont envoyes via des Alt codes Windows (`é=Alt+0233`, `è=Alt+0232`, `à=Alt+0224`, `ç=Alt+0231`), donc ils ne dependent plus d'un layout `US-International`.
 
 ## Couche GAME
 
@@ -197,6 +195,7 @@ Rappel :
 
 - `BT 0` a `BT 3` selectionnent le profil Bluetooth
 - `BT CLR` efface le profil Bluetooth courant
+- `NUM LOCK` active ou desactive le pave numerique Windows pour les accents
 - `BOOT` entre dans le bootloader
 - `RESET` redemarre le clavier
 - `OUT TOG` bascule la sortie preferee entre `USB` et `BLE`
