@@ -218,6 +218,32 @@ Points utiles :
 - si le clavier est branche en USB pendant les tests, pense a faire `OUT TOG` pour retester en BLE
 - en split ZMK, les problemes de connexion viennent souvent d'anciens pairages restes en memoire
 
+### Deconnexions rapides ou reveil lent
+
+Le firmware garde volontairement le `deep sleep` desactive pendant le diagnostic Bluetooth. En etat `idle`, ZMK doit rester connecte au Bluetooth ; une deconnexion rapide n'est donc pas un comportement normal de veille.
+
+Pour eviter une impression de reveil trop rapide pendant les tests, le repo force aussi :
+
+- `CONFIG_ZMK_SLEEP=n` pour empecher le sommeil profond qui coupe le Bluetooth
+- `CONFIG_ZMK_IDLE_TIMEOUT=300000` pour attendre 5 minutes avant l'etat `idle` au lieu du defaut ZMK de 30 secondes
+
+Ce repo active aussi trois options de stabilite Bluetooth :
+
+- `CONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y` pour eviter certains problemes de PHY 2 Mbps, surtout avec des chipsets Windows Realtek/Intel
+- `CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n` pour contourner un bug Windows lie aux notifications batterie
+- `CONFIG_BT_CTLR_TX_PWR_PLUS_8=y` pour augmenter la puissance radio BLE du nRF52840
+
+Procedure conseillee apres un changement Bluetooth :
+
+1. supprime `TOTEM` dans les parametres Bluetooth Windows
+2. flashe `settings_reset-seeeduino_xiao_ble-zmk.uf2` sur les deux moities
+3. reflashe ensuite `totem_left...` sur la gauche et `totem_right...` sur la droite
+4. redemarre les deux moities presque en meme temps
+5. selectionne `BT 0`, puis refais un pairing propre depuis Windows
+6. si Windows reconnecte puis deconnecte encore, redemarre le Bluetooth Windows ou supprime l'ancien peripherique cache depuis le Gestionnaire de peripheriques
+
+Si le probleme continue apres ca, teste aussi avec la moitie gauche tres proche du PC, loin d'un hub USB 3 ou d'une coque metallique. Une batterie faible ou une alimentation instable peut aussi faire redemarrer la moitie centrale et ressembler a une deconnexion Bluetooth.
+
 ## Fichiers Utiles
 
 - keymap principal : [`config/totem.keymap`](./config/totem.keymap)
