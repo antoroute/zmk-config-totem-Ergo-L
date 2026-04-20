@@ -74,6 +74,12 @@ function Stack {
     }
 }
 
+function Chr {
+    param([int]$CodePoint)
+
+    return [string][char]$CodePoint
+}
+
 function Set-RectLabels {
     param(
         [object[]]$VisualOrderLabels
@@ -210,30 +216,37 @@ $legend
 }
 
 $baseLabels = Set-RectLabels -VisualOrderLabels @(
-    (One "Q"), (One "C"), (One "O"), (One "P"), (One "W"), (One "J"), (One "M"), (One "D"), (One "'"), (One "Y"),
-    (Dual "A" "GUI"), (Dual "S" "ALT"), (Dual "E" "SFT"), (Dual "N" "CTL"), (One "F"), (One "L"), (Dual "R" "CTL"), (Dual "T" "SFT"), (Dual "I" "ALT"), (Dual "U" "GUI"),
-    (One "SYS" "hold"), (One "ESC"), (One "Z"), (One "X"), (One "-"), (One "V"), (One "B"), (One "H"), (One "G"), (One ","), (One "."), (One "K"),
-    (One "TAB"), (Dual "BSPC" "NAV"), (One "SPACE"), (One "ENTER"), (Dual "DEL" "SYM"), (One "RAlt" "hold")
+    (One "Q"), (One "C"), (One "O"), (One "P"), (One "W"), (One "J"), (One "M"), (One "D"), (Dual "!" (Chr 0x2605)), (One "Y"),
+    (Dual "A" "GUI"), (Dual "S" "Alt"), (Dual "E" "Sft"), (Dual "N" "Ctrl"), (One "F"), (One "L"), (Dual "R" "Ctrl"), (Dual "T" "Sft"), (Dual "I" "Alt"), (Dual "U" "GUI"),
+    (One "Tab"), (One "Z"), (One "X"), (One "?"), (One "V"), (One "B"), (One ":"), (One "H"), (One "G"), (One ";"), (One "K"), (Dual "Del" "SYS"),
+    (One "Shift"), (One "Nav"), (One "Space"), (One "Enter"), (One "AltGr"), (One "Bspc")
 )
 
 $navLabels = Set-RectLabels -VisualOrderLabels @(
-    (One "1"), (One "2"), (One "3"), (One "4"), (One "5"), (One "6"), (One "7"), (One "8"), (One "9"), (One "0"),
-    (One "TAB"), (One "HOME"), (One "PGDN"), (One "PGUP"), (One "END"), (One "LEFT"), (One "DOWN"), (One "UP"), (One "RGHT"), (One "DEL"),
-    (One "SYS" "hold"), (One "CTRL"), (One "SHIFT"), $null, $null, $null, $null, $null, $null, $null, $null, $null,
+    (One "Tab"), (One (Chr 0x2196)), (One (Chr 0x2191)), (One (Chr 0x2198)), (One "PgUp"), (One "/"), (One "7"), (One "8"), (One "9"), $null,
+    (One "Maj"), (One (Chr 0x2190)), (One (Chr 0x2193)), (One (Chr 0x2192)), (One "PgDn"), (One "-"), (One "4"), (One "5"), (One "6"), (One "0"),
+    $null, $null, (One "Vol-"), (One "Mute"), (One "Vol+"), (One (Chr 0x21A4)), (One ","), (One "1"), (One "2"), (One "3"), (One "."), $null,
     $null, $null, $null, $null, $null, $null
 )
 
 $symLabels = Set-RectLabels -VisualOrderLabels @(
-    (One "!"), (One "@"), (One "#"), (One "$"), (One "%"), (One "^"), (One "&"), (One "*"), (One "="), (One "+"),
-    (One "("), (One "["), (One "{"), (One '`'), (One "'"), (One "-"), (One "}"), (One "]"), (One ")"), (One '"'),
-    (One "SYS" "hold"), $null, (One '\'), (One "/"), (One ","), (One "."), (One ";"), (One "'"), (Stack @("C", "CED")), (Stack @("E", "ACU")), (Stack @("A", "GRA")), (Stack @("E", "GRA")),
+    (One "^"), (One "<"), (One ">"), (One ([string][char]36)), (One "%"), (One "@"), (One "&"), (One "*"), (One ([string][char]39)), (One ([string][char]96)),
+    (One "{"), (One "("), (One ")"), (One "}"), (One "="), (One ([string][char]92)), (One "+"), (One "-"), (One "/"), (One ([string][char]34)),
+    $null, (One "~"), (One "["), (One "]"), (One "_"), (One "#"), (One "|"), (One "!"), (One ";"), (One ":"), (One "?"), $null,
+    $null, $null, $null, $null, $null, $null
+)
+
+$deadLabels = Set-RectLabels -VisualOrderLabels @(
+    (One (Chr 0x00E2)), (One (Chr 0x00E7)), (One (Chr 0x0153)), (One (Chr 0x00F4)), $null, $null, (One (Chr 0x00B5)), $null, $null, (One (Chr 0x00FB)),
+    (One (Chr 0x00E0)), (One (Chr 0x00E9)), (One (Chr 0x00E8)), (One (Chr 0x00EA)), (One (Chr 0x00F1)), (One "("), (One ")"), (One (Chr 0x00EE)), (One (Chr 0x00EF)), (One (Chr 0x00F9)),
+    $null, (One (Chr 0x00E6)), (One (Chr 0x00DF)), $null, $null, $null, (One (Chr 0x2026)), $null, (One (Chr 0x03B1)), (One (Chr 0x00B7)), $null, $null,
     $null, $null, $null, $null, $null, $null
 )
 
 $sysLabels = Set-RectLabels -VisualOrderLabels @(
     (Stack @("BT", "0")), (Stack @("BT", "1")), (Stack @("BT", "2")), (Stack @("BT", "3")), (Stack @("BT", "CLR")),
-    (Stack @("NUM", "LOCK")), $null, $null, $null, $null,
-    (One "BOOT"), (One "RESET"), (Stack @("OUT", "TOG")), $null, $null,
+    (Stack @("OUT", "TOG")), (Stack @("NUM", "LOCK")), $null, $null, $null,
+    (One "BOOT"), (One "RESET"), $null, $null, $null,
     $null, $null, $null, $null, $null,
     $null, $null, $null, $null, $null, $null, $null, $null, $null, $null, $null, $null,
     $null, $null, $null, $null, $null, $null
@@ -249,5 +262,6 @@ $gameLabels = Set-RectLabels -VisualOrderLabels @(
 Write-LayerSvg -Name "base" -Labels $baseLabels -FillOpacity 0.14
 Write-LayerSvg -Name "nav" -Labels $navLabels -FillOpacity 0.18
 Write-LayerSvg -Name "sym" -Labels $symLabels -FillOpacity 0.18
+Write-LayerSvg -Name "dead" -Labels $deadLabels -FillOpacity 0.18
 Write-LayerSvg -Name "sys" -Labels $sysLabels -FillOpacity 0.18
 Write-LayerSvg -Name "game" -Labels $gameLabels -FillOpacity 0.16
