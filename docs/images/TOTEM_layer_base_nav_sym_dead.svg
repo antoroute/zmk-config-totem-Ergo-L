@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="258.64mm" height="94.36mm" viewBox="0 0 733.16 267.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161b22;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #58a6ff;
+        stroke-miterlimit: 10;
+        stroke-width: .28px;
+      }
+    </style>
+  </defs>
+  <g id="Shape">
+    <path class="cls-1" d="M.69,160.19l27.77-4.9V14.61c0-1.57,1.27-2.83,2.83-2.83h125.46V.84c0-.46,.38-.84,.84-.84h50.76c.46,0,.84,.38,.84,.84V11.78h135.72c1.57,0,2.83,1.27,2.83,2.83V215.66l15.12,8.73c.4,.23,.54,.74,.31,1.14l-23.97,41.51c-.23,.4-.74,.54-1.14,.31-2.77-1.6-13.03-7.52-21.72-12.54-11.22-6.48-22.44-12.96-47.42-19.65s-37.59-6.69-50.19-6.69c-10.77,0-21.38,0-24.37,0-.46,0-.84-.38-.84-.84v-3.42H31.3c-1.57,0-2.83-1.27-2.83-2.83v-15.72l-19.16,3.38c-.46,.08-.89-.22-.97-.68L.01,161.16c-.08-.46,.22-.89,.68-.97Z"/>
+    <path class="cls-1" d="M732.46,160.19l-27.77-4.9V14.61c0-1.57-1.27-2.83-2.83-2.83h-125.46V.84c0-.46-.38-.84-.84-.84h-50.76c-.46,0-.84,.38-.84,.84V11.78h-135.72c-1.57,0-2.83,1.27-2.83,2.83V215.66l-15.12,8.73c-.4,.23-.54,.74-.31,1.14l23.97,41.51c.23,.4,.74,.54,1.14,.31,2.77-1.6,13.03-7.52,21.72-12.54,11.22-6.48,22.44-12.96,47.42-19.65s37.59-6.69,50.19-6.69c10.77,0,21.38,0,24.37,0,.46,0,.84-.38,.84-.84v-3.42h162.23c1.57,0,2.83-1.27,2.83-2.83v-15.72l19.16,3.38c.46,.08,.89-.22,.97-.68l8.32-47.2c.08-.46-.22-.89-.68-.97Z"/>
+  </g>
+  <g id="Keys_Kopie" data-name="Keys Kopie">
+    <g id="Keycaps">
+      <rect class="cls-2" x="259.97" y="33.02" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="259.97" y="81.22" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="259.97" y="129.33" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="208.96" y="25.42" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="208.96" y="73.62" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="208.96" y="121.82" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="157.96" y="1.41" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="157.96" y="49.51" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="157.96" y="97.71" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="194.74" y="180.27" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="99.69" y="30.3" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-3.44 8.81) rotate(-4)"/>
+      <rect class="cls-2" x="103.09" y="78.41" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-6.79 9.17) rotate(-4)"/>
+      <rect class="cls-2" x="106.39" y="126.41" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-10.13 9.52) rotate(-4)"/>
+      <rect class="cls-2" x="42.36" y="74.32" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-15.95 13.15) rotate(-10)"/>
+      <rect class="cls-2" x="50.66" y="121.83" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-24.07 15.31) rotate(-10)"/>
+      <rect class="cls-2" x="59.06" y="169.23" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-32.17 17.49) rotate(-10)"/>
+      <rect class="cls-2" x="252.67" y="186.64" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(.37 423.37) rotate(-75)"/>
+      <rect class="cls-2" x="304.89" y="208.37" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(-37.79 400.88) rotate(-60)"/>
+      <rect class="cls-2" x="4.98" y="156.81" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-30.84 7.91) rotate(-10)"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="265.63" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="265.63" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="265.63" y="135" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="214.63" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="214.63" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="214.63" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="163.63" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="163.63" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="163.63" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="200.41" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="105.36" y="35.97" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-3.44 8.81) rotate(-4)"/>
+      <rect class="cls-2" x="108.76" y="84.07" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-6.79 9.17) rotate(-4)"/>
+      <rect class="cls-2" x="112.06" y="132.08" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-10.13 9.52) rotate(-4)"/>
+      <rect class="cls-2" x="48.03" y="79.99" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-15.95 13.15) rotate(-10)"/>
+      <rect class="cls-2" x="56.33" y="127.5" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-24.07 15.31) rotate(-10)"/>
+      <rect class="cls-2" x="64.73" y="174.9" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-32.17 17.49) rotate(-10)"/>
+      <rect class="cls-2" x="258.34" y="192.31" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(.37 423.37) rotate(-75)"/>
+      <rect class="cls-2" x="310.56" y="214.04" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(-37.79 400.88) rotate(-60)"/>
+      <rect class="cls-2" x="10.65" y="162.48" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-30.84 7.91) rotate(-10)"/>
+    </g>
+    <g id="Keycaps-2" data-name="Keycaps">
+      <rect class="cls-2" x="423.36" y="33.02" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="423.36" y="81.22" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="423.36" y="129.33" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="474.36" y="25.42" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="474.36" y="73.62" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="474.36" y="121.82" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="525.36" y="1.41" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="525.36" y="49.51" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="525.36" y="97.71" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="488.59" y="180.27" width="49.61" height="46.77" rx="2.61" ry="2.61"/>
+      <rect class="cls-2" x="585.05" y="28.89" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(512.43 656.9) rotate(-86)"/>
+      <rect class="cls-2" x="581.65" y="76.99" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(461.29 698.25) rotate(-86)"/>
+      <rect class="cls-2" x="578.35" y="124.99" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(410.33 739.61) rotate(-86)"/>
+      <rect class="cls-2" x="642.38" y="72.9" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(453.94 736.4) rotate(-80)"/>
+      <rect class="cls-2" x="634.08" y="120.41" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(400.29 767.48) rotate(-80)"/>
+      <rect class="cls-2" x="625.68" y="167.81" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(346.67 798.38) rotate(-80)"/>
+      <rect class="cls-2" x="432.07" y="188.06" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-39.16 125.45) rotate(-15)"/>
+      <rect class="cls-2" x="379.85" y="209.78" width="49.61" height="46.77" rx="2.61" ry="2.61" transform="translate(-62.37 233.57) rotate(-30)"/>
+      <rect class="cls-2" x="679.76" y="155.39" width="46.77" height="49.61" rx="2.61" ry="2.61" transform="translate(403.59 841.37) rotate(-80)"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="429.03" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="429.03" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="429.03" y="135" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="480.03" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="480.03" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="480.03" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="531.03" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="531.03" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="531.03" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="494.25" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95"/>
+      <rect class="cls-2" x="590.72" y="34.56" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(512.44 656.9) rotate(-86)"/>
+      <rect class="cls-2" x="587.32" y="82.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(461.29 698.25) rotate(-86)"/>
+      <rect class="cls-2" x="584.02" y="130.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(410.33 739.61) rotate(-86)"/>
+      <rect class="cls-2" x="648.05" y="78.57" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(453.93 736.39) rotate(-80)"/>
+      <rect class="cls-2" x="639.75" y="126.08" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(400.29 767.47) rotate(-80)"/>
+      <rect class="cls-2" x="631.35" y="173.48" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(346.67 798.37) rotate(-80)"/>
+      <rect class="cls-2" x="437.73" y="193.73" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-39.16 125.46) rotate(-15)"/>
+      <rect class="cls-2" x="385.52" y="215.45" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-62.37 233.57) rotate(-30)"/>
+      <rect class="cls-2" x="685.43" y="161.06" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(403.59 841.37) rotate(-80)"/>
+    </g>
+  </g>
+  <g id="Readme_Overlay_base_nav_sym_dead">
+    <rect x="265.63" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="268.83" y="45.89" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">PgUp</text>
+    <text x="300.7" y="45.89" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">%</text>
+    <text x="284.77" y="58.11" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">W</text>
+    <rect x="265.63" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="268.83" y="94.09" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">PgDn</text>
+    <text x="300.7" y="94.09" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">=</text>
+    <text x="284.77" y="106.31" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">F</text>
+    <text x="284.77" y="116.52" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ñ</text>
+    <rect x="265.63" y="135" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="268.83" y="142.2" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">↤</text>
+    <text x="300.7" y="142.2" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">#</text>
+    <text x="284.77" y="154.42" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">B</text>
+    <rect x="214.63" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="217.83" y="38.29" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">↘</text>
+    <text x="249.7" y="38.29" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">$</text>
+    <text x="233.77" y="50.51" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">P</text>
+    <text x="233.77" y="60.72" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ô</text>
+    <rect x="214.63" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="217.83" y="86.49" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">→</text>
+    <text x="249.7" y="86.49" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">}</text>
+    <text x="233.77" y="98.71" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">N/Ctrl</text>
+    <text x="233.77" y="108.92" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ê</text>
+    <rect x="214.63" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="217.83" y="134.69" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">Vol+</text>
+    <text x="249.7" y="134.69" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">_</text>
+    <text x="233.77" y="146.91" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">V</text>
+    <rect x="163.63" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="166.83" y="14.28" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">↑</text>
+    <text x="198.7" y="14.28" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">&gt;</text>
+    <text x="182.77" y="26.5" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">O</text>
+    <text x="182.77" y="36.71" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">œ</text>
+    <rect x="163.63" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="166.83" y="62.38" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">↓</text>
+    <text x="198.7" y="62.38" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">)</text>
+    <text x="182.77" y="74.6" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">E/Sft</text>
+    <text x="182.77" y="84.81" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">è</text>
+    <rect x="163.63" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="166.83" y="110.58" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">Mute</text>
+    <text x="198.7" y="110.58" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">]</text>
+    <text x="182.77" y="122.8" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">?</text>
+    <rect x="200.41" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="219.55" y="205.36" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Shift</text>
+    <rect x="105.36" y="35.97" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-3.44 8.81) rotate(-4)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="108.56" y="43.17" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">↖</text>
+    <text x="140.43" y="43.17" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">&lt;</text>
+    <text x="124.5" y="55.39" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">C</text>
+    <text x="124.5" y="65.6" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ç</text>
+    <rect x="108.76" y="84.07" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-6.79 9.17) rotate(-4)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="111.96" y="91.27" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">←</text>
+    <text x="143.83" y="91.27" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">(</text>
+    <text x="127.9" y="103.49" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">S/Alt</text>
+    <text x="127.9" y="113.7" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">é</text>
+    <rect x="112.06" y="132.08" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-10.13 9.52) rotate(-4)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="115.26" y="139.28" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">Vol-</text>
+    <text x="147.13" y="139.28" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">[</text>
+    <text x="131.2" y="151.5" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">X</text>
+    <text x="131.2" y="161.71" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ß</text>
+    <rect x="48.03" y="79.99" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-15.95 13.15) rotate(-10)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="51.23" y="87.19" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">Tab</text>
+    <text x="83.1" y="87.19" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">^</text>
+    <text x="67.17" y="99.41" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Q</text>
+    <text x="67.17" y="109.62" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">â</text>
+    <rect x="56.33" y="127.5" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-24.07 15.31) rotate(-10)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="59.53" y="134.7" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">Maj</text>
+    <text x="91.4" y="134.7" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">{</text>
+    <text x="75.47" y="146.92" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">A/GUI</text>
+    <text x="75.47" y="157.13" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">à</text>
+    <rect x="64.73" y="174.9" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-32.17 17.49) rotate(-10)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="99.8" y="182.1" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">~</text>
+    <text x="83.87" y="194.32" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Z</text>
+    <text x="83.87" y="204.53" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">æ</text>
+    <rect x="258.34" y="192.31" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(.37 423.37) rotate(-75)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="276.06" y="213.15" fill="#7dd3fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Nav</text>
+    <text x="276.06" y="224.78" fill="#7dd3fc" fill-opacity=".76" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.6" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".3" paint-order="stroke fill">hold NAV</text>
+    <rect x="310.56" y="214.04" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(-37.79 400.88) rotate(-60)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="328.28" y="234.88" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Space</text>
+    <rect x="10.65" y="162.48" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-30.84 7.91) rotate(-10)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="29.79" y="181.9" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Tab</text>
+    <rect x="429.03" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="432.23" y="45.89" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">/</text>
+    <text x="464.1" y="45.89" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">@</text>
+    <text x="448.17" y="58.11" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">J</text>
+    <rect x="429.03" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="432.23" y="94.09" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">-</text>
+    <text x="464.1" y="94.09" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">\</text>
+    <text x="448.17" y="106.31" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">L</text>
+    <text x="448.17" y="116.52" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">(</text>
+    <rect x="429.03" y="135" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="432.23" y="142.2" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">,</text>
+    <text x="464.1" y="142.2" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">|</text>
+    <text x="448.17" y="154.42" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">:</text>
+    <text x="448.17" y="164.63" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">…</text>
+    <rect x="480.03" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="483.23" y="38.29" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">7</text>
+    <text x="515.1" y="38.29" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">&amp;</text>
+    <text x="499.17" y="50.51" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">M</text>
+    <text x="499.17" y="60.72" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">µ</text>
+    <rect x="480.03" y="79.29" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="483.23" y="86.49" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">4</text>
+    <text x="515.1" y="86.49" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">+</text>
+    <text x="499.17" y="98.71" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">R/Ctrl</text>
+    <text x="499.17" y="108.92" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">)</text>
+    <rect x="480.03" y="127.49" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="483.23" y="134.69" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">1</text>
+    <text x="515.1" y="134.69" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">!</text>
+    <text x="499.17" y="146.91" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">H</text>
+    <rect x="531.03" y="7.08" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="534.23" y="14.28" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">8</text>
+    <text x="566.1" y="14.28" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">*</text>
+    <text x="550.17" y="26.5" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">D</text>
+    <rect x="531.03" y="55.18" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="534.23" y="62.38" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">5</text>
+    <text x="566.1" y="62.38" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">-</text>
+    <text x="550.17" y="74.6" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">T/Sft</text>
+    <text x="550.17" y="84.81" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">î</text>
+    <rect x="531.03" y="103.38" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="534.23" y="110.58" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">2</text>
+    <text x="566.1" y="110.58" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">;</text>
+    <text x="550.17" y="122.8" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">G</text>
+    <text x="550.17" y="133.01" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">α</text>
+    <rect x="494.25" y="185.94" width="38.27" height="35.43" rx=".95" ry=".95" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="513.39" y="205.36" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="10" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Bspc</text>
+    <rect x="590.72" y="34.56" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(512.44 656.9) rotate(-86)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="593.92" y="41.76" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">9</text>
+    <text x="622.95" y="41.76" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">&apos;</text>
+    <text x="606.84" y="55.4" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="900" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">!</text>
+    <text x="610.24" y="55.4" fill="#f472b6" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="10.2" font-weight="900" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".75" paint-order="stroke fill">★</text>
+    <rect x="587.32" y="82.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(461.29 698.25) rotate(-86)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="590.52" y="89.86" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">6</text>
+    <text x="619.55" y="89.86" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">/</text>
+    <text x="605.04" y="103.5" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">I/Alt</text>
+    <text x="605.04" y="115.13" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ï</text>
+    <rect x="584.02" y="130.66" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(410.33 739.61) rotate(-86)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="587.22" y="137.86" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">3</text>
+    <text x="616.25" y="137.86" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">:</text>
+    <text x="601.74" y="151.5" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">;</text>
+    <text x="601.74" y="163.13" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">·</text>
+    <rect x="648.05" y="78.57" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(453.93 736.39) rotate(-80)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="680.28" y="85.77" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">`</text>
+    <text x="665.77" y="99.41" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Y</text>
+    <text x="665.77" y="111.04" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">û</text>
+    <rect x="639.75" y="126.08" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(400.29 767.47) rotate(-80)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="642.95" y="133.28" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">0</text>
+    <text x="671.98" y="133.28" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">&quot;</text>
+    <text x="657.47" y="146.92" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">U/GUI</text>
+    <text x="657.47" y="158.55" fill="#f472b6" fill-opacity=".62" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">ù</text>
+    <rect x="631.35" y="173.48" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(346.67 798.37) rotate(-80)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="634.55" y="180.68" fill="#7dd3fc" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">.</text>
+    <text x="663.58" y="180.68" fill="#fbbf24" fill-opacity=".88" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">?</text>
+    <text x="649.07" y="194.32" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">K</text>
+    <rect x="437.73" y="193.73" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-39.16 125.46) rotate(-15)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="456.87" y="213.15" fill="#fbbf24" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">AltGr</text>
+    <text x="456.87" y="223.36" fill="#fbbf24" fill-opacity=".76" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="4.6" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".3" paint-order="stroke fill">hold SYM</text>
+    <rect x="385.52" y="215.45" width="38.27" height="35.43" rx=".95" ry=".95" transform="translate(-62.37 233.57) rotate(-30)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="404.66" y="234.87" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.2" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Enter</text>
+    <rect x="685.43" y="161.06" width="35.43" height="38.27" rx=".95" ry=".95" transform="translate(403.59 841.37) rotate(-80)" fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>
+    <text x="703.15" y="181.9" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="7" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">Del/SYS</text>
+  </g>
+  <g id="Readme_Combined_Legend">
+    <rect x="249.2" y="236.4" width="250.8" height="20.4" rx="10.2" ry="10.2" fill="#0d1117" fill-opacity=".86" stroke="#30363d" stroke-opacity=".8" stroke-width=".6"/>
+    <rect x="260" y="241.7" width="9.4" height="9.4" rx="2" ry="2" fill="#f0f6fc" fill-opacity=".32"/>
+    <text x="273" y="246.8" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.5" font-weight="800" dominant-baseline="middle">BASE</text>
+    <rect x="314" y="241.7" width="9.4" height="9.4" rx="2" ry="2" fill="#7dd3fc" fill-opacity=".32"/>
+    <text x="327" y="246.8" fill="#7dd3fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.5" font-weight="800" dominant-baseline="middle">NAV</text>
+    <rect x="368" y="241.7" width="9.4" height="9.4" rx="2" ry="2" fill="#fbbf24" fill-opacity=".32"/>
+    <text x="381" y="246.8" fill="#fbbf24" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.5" font-weight="800" dominant-baseline="middle">SYM</text>
+    <rect x="422" y="241.7" width="9.4" height="9.4" rx="2" ry="2" fill="#f472b6" fill-opacity=".32"/>
+    <text x="435" y="246.8" fill="#f472b6" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.5" font-weight="800" dominant-baseline="middle">DEAD</text>
+  </g></svg>

@@ -215,6 +215,192 @@ $legend
     Set-Content -Path $outPath -Value $outSvg -Encoding utf8
 }
 
+function Get-CompactText {
+    param(
+        [pscustomobject]$Item
+    )
+
+    if ($null -eq $Item) {
+        return ""
+    }
+
+    $parts = @(
+        $Item.Lines | ForEach-Object {
+            $_.Text
+        }
+    ) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+
+    return ($parts -join "/")
+}
+
+function Get-CombinedKeyOverlay {
+    param(
+        [pscustomobject]$Rect,
+        [object[]]$LayerItems
+    )
+
+    $base = $LayerItems | Where-Object { $_.Name -eq "BASE" } | Select-Object -First 1
+    $nav = $LayerItems | Where-Object { $_.Name -eq "NAV" } | Select-Object -First 1
+    $sym = $LayerItems | Where-Object { $_.Name -eq "SYM" } | Select-Object -First 1
+    $dead = $LayerItems | Where-Object { $_.Name -eq "DEAD" } | Select-Object -First 1
+
+    $baseText = Get-CompactText -Item $base.Item
+    $navText = Get-CompactText -Item $nav.Item
+    $symText = Get-CompactText -Item $sym.Item
+    $deadText = Get-CompactText -Item $dead.Item
+
+    if ([string]::IsNullOrWhiteSpace($baseText) -and
+        [string]::IsNullOrWhiteSpace($navText) -and
+        [string]::IsNullOrWhiteSpace($symText) -and
+        [string]::IsNullOrWhiteSpace($deadText)) {
+        return ""
+    }
+
+    $centerX = $Rect.X + ($Rect.W / 2.0)
+    $centerY = $Rect.Y + ($Rect.H / 2.0) + 0.5
+    $transform = if ([string]::IsNullOrWhiteSpace($Rect.Transform)) { "" } else { $Rect.Transform }
+    $keyFill = '<rect x="{0}" y="{1}" width="{2}" height="{3}" rx=".95" ry=".95"{4} fill="#0d1117" fill-opacity=".50" stroke="#30363d" stroke-opacity=".8" stroke-width=".35"/>' -f `
+        ([string]::Format($culture, "{0:0.##}", $Rect.X)),
+        ([string]::Format($culture, "{0:0.##}", $Rect.Y)),
+        ([string]::Format($culture, "{0:0.##}", $Rect.W)),
+        ([string]::Format($culture, "{0:0.##}", $Rect.H)),
+        $transform
+
+    $parts = @($keyFill)
+
+    if (-not [string]::IsNullOrWhiteSpace($navText)) {
+        $parts += '<text x="{0}" y="{1}" fill="{2}" fill-opacity=".88" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">{3}</text>' -f `
+            ([string]::Format($culture, "{0:0.##}", $Rect.X + 3.2)),
+            ([string]::Format($culture, "{0:0.##}", $Rect.Y + 7.2)),
+            $nav.Color,
+            [System.Security.SecurityElement]::Escape($navText)
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($symText)) {
+        $parts += '<text x="{0}" y="{1}" fill="{2}" fill-opacity=".88" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="6.2" font-weight="800" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".5" paint-order="stroke fill">{3}</text>' -f `
+            ([string]::Format($culture, "{0:0.##}", $Rect.X + $Rect.W - 3.2)),
+            ([string]::Format($culture, "{0:0.##}", $Rect.Y + 7.2)),
+            $sym.Color,
+            [System.Security.SecurityElement]::Escape($symText)
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($baseText)) {
+        $baseRendered = $false
+        $deadActivatorText = "!/" + (Chr 0x2605)
+
+        if ($baseText -eq $deadActivatorText) {
+            $parts += '<text x="{0}" y="{1}" fill="{2}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="11" font-weight="900" text-anchor="end" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">!</text>' -f `
+                ([string]::Format($culture, "{0:0.##}", $centerX - 1.6)),
+                ([string]::Format($culture, "{0:0.##}", $centerY + 1.2)),
+                $base.Color
+            $parts += '<text x="{0}" y="{1}" fill="{2}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="10.2" font-weight="900" text-anchor="start" dominant-baseline="middle" stroke="#0d1117" stroke-width=".75" paint-order="stroke fill">{3}</text>' -f `
+                ([string]::Format($culture, "{0:0.##}", $centerX + 1.8)),
+                ([string]::Format($culture, "{0:0.##}", $centerY + 1.2)),
+                $dead.Color,
+                [System.Security.SecurityElement]::Escape((Chr 0x2605))
+            $baseRendered = $true
+        }
+
+        $baseColor = $base.Color
+        if ($baseText -eq "Nav") {
+            $baseColor = $nav.Color
+        } elseif ($baseText -eq "AltGr") {
+            $baseColor = $sym.Color
+        }
+
+        $fontSize = switch ($baseText.Length) {
+            { $_ -le 2 } { 12.0; break }
+            { $_ -le 4 } { 10.0; break }
+            { $_ -le 6 } { 8.2; break }
+            default { 7.0; break }
+        }
+
+        if (-not $baseRendered) {
+            $parts += '<text x="{0}" y="{1}" fill="{2}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="{3}" font-weight="900" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".85" paint-order="stroke fill">{4}</text>' -f `
+                ([string]::Format($culture, "{0:0.##}", $centerX)),
+                ([string]::Format($culture, "{0:0.##}", $centerY + 1.2)),
+                $baseColor,
+                ([string]::Format($culture, "{0:0.##}", $fontSize)),
+                [System.Security.SecurityElement]::Escape($baseText)
+        }
+
+        if (($baseText -eq "Nav") -or ($baseText -eq "AltGr")) {
+            $accessLayer = if ($baseText -eq "Nav") { "hold NAV" } else { "hold SYM" }
+            $accessColor = if ($baseText -eq "Nav") { $nav.Color } else { $sym.Color }
+            $parts += '<text x="{0}" y="{1}" fill="{2}" fill-opacity=".76" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="4.6" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".3" paint-order="stroke fill">{3}</text>' -f `
+                ([string]::Format($culture, "{0:0.##}", $centerX)),
+                ([string]::Format($culture, "{0:0.##}", $Rect.Y + $Rect.H - 5.8)),
+                $accessColor,
+                $accessLayer
+        }
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($deadText)) {
+        $parts += '<text x="{0}" y="{1}" fill="{2}" fill-opacity=".62" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="4.8" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".35" paint-order="stroke fill">{3}</text>' -f `
+            ([string]::Format($culture, "{0:0.##}", $centerX)),
+            ([string]::Format($culture, "{0:0.##}", $Rect.Y + $Rect.H - 5.8)),
+            $dead.Color,
+            [System.Security.SecurityElement]::Escape($deadText)
+    }
+
+    return $parts -join "`n    "
+}
+
+function Write-CombinedLayerSvg {
+    param(
+        [string]$Name,
+        [object[]]$Layers
+    )
+
+    $overlayParts = @()
+    for ($i = 0; $i -lt $rects.Count; $i++) {
+        $layerItems = @(
+            $Layers | ForEach-Object {
+                [pscustomobject]@{
+                    Name = $_.Name
+                    Color = $_.Color
+                    Item = $_.Labels[$i]
+                }
+            }
+        )
+
+        $overlay = Get-CombinedKeyOverlay -Rect $rects[$i] -LayerItems $layerItems
+        if (-not [string]::IsNullOrWhiteSpace($overlay)) {
+            $overlayParts += $overlay
+        }
+    }
+
+    $legendItems = @()
+    for ($i = 0; $i -lt $Layers.Count; $i++) {
+        $x = 260.0 + (54.0 * $i)
+        $legendItems += '<rect x="{0}" y="241.7" width="9.4" height="9.4" rx="2" ry="2" fill="{1}" fill-opacity=".32"/>' -f `
+            ([string]::Format($culture, "{0:0.##}", $x)),
+            $Layers[$i].Color
+        $legendItems += '<text x="{0}" y="246.8" fill="{1}" font-family="''DejaVu Sans Mono'', ''SFMono-Regular'', Consolas, monospace" font-size="8.5" font-weight="800" dominant-baseline="middle">{2}</text>' -f `
+            ([string]::Format($culture, "{0:0.##}", $x + 13.0)),
+            $Layers[$i].Color,
+            $Layers[$i].Name
+    }
+
+    $legend = @"
+  <g id="Readme_Combined_Legend">
+    <rect x="249.2" y="236.4" width="250.8" height="20.4" rx="10.2" ry="10.2" fill="#0d1117" fill-opacity=".86" stroke="#30363d" stroke-opacity=".8" stroke-width=".6"/>
+    $($legendItems -join "`n    ")
+  </g>
+"@
+
+    $overlayGroup = @"
+  <g id="Readme_Overlay_$Name">
+    $($overlayParts -join "`n    ")
+  </g>
+$legend
+"@
+
+    $outSvg = $baseSvg -replace '</svg>\s*$', "$overlayGroup</svg>"
+    $outPath = Join-Path $imagesDir "TOTEM_layer_$Name.svg"
+    Set-Content -Path $outPath -Value $outSvg -Encoding utf8
+}
+
 $baseLabels = Set-RectLabels -VisualOrderLabels @(
     (One "Q"), (One "C"), (One "O"), (One "P"), (One "W"), (One "J"), (One "M"), (One "D"), (Dual "!" (Chr 0x2605)), (One "Y"),
     (Dual "A" "GUI"), (Dual "S" "Alt"), (Dual "E" "Sft"), (Dual "N" "Ctrl"), (One "F"), (One "L"), (Dual "R" "Ctrl"), (Dual "T" "Sft"), (Dual "I" "Alt"), (Dual "U" "GUI"),
@@ -265,3 +451,10 @@ Write-LayerSvg -Name "sym" -Labels $symLabels -FillOpacity 0.18
 Write-LayerSvg -Name "dead" -Labels $deadLabels -FillOpacity 0.18
 Write-LayerSvg -Name "sys" -Labels $sysLabels -FillOpacity 0.18
 Write-LayerSvg -Name "game" -Labels $gameLabels -FillOpacity 0.16
+
+Write-CombinedLayerSvg -Name "base_nav_sym_dead" -Layers @(
+    [pscustomobject]@{ Name = "BASE"; Color = "#f0f6fc"; Labels = $baseLabels },
+    [pscustomobject]@{ Name = "NAV";  Color = "#7dd3fc"; Labels = $navLabels },
+    [pscustomobject]@{ Name = "SYM";  Color = "#fbbf24"; Labels = $symLabels },
+    [pscustomobject]@{ Name = "DEAD"; Color = "#f472b6"; Labels = $deadLabels }
+)

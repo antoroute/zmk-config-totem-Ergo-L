@@ -126,6 +126,19 @@ Exemples :
 - dans les images, le texte blanc indique l'action en tap
 - dans les images, le texte bleu indique l'action au maintien
 
+## Vue Cumulee BASE / NAV / SYM / DEAD
+
+Cette image regroupe les 4 couches de frappe principales sur un seul schema.
+
+Code couleur :
+
+- `BASE` : blanc
+- `NAV` : bleu
+- `SYM` : jaune
+- `DEAD` : rose
+
+![Vue cumulee BASE NAV SYM DEAD](./docs/images/TOTEM_layer_base_nav_sym_dead.svg)
+
 ## Couche BASE
 
 ![Couche BASE](./docs/images/TOTEM_layer_base.svg)
