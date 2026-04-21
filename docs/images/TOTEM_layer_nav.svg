@@ -136,7 +136,7 @@
     <rect x="429.03" y="38.69" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.18" stroke="none"/>
     <text x="448.17" y="56.91" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">/</text>
     <rect x="429.03" y="86.89" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.18" stroke="none"/>
-    <text x="448.17" y="105.11" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">-</text>
+    <text x="448.17" y="105.11" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="11" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">Ctrl</text>
     <rect x="429.03" y="135" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.18" stroke="none"/>
     <text x="448.17" y="153.22" fill="#f0f6fc" font-family="'DejaVu Sans Mono', 'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700" text-anchor="middle" dominant-baseline="middle" stroke="#0d1117" stroke-width=".8" paint-order="stroke fill">,</text>
     <rect x="480.03" y="31.09" width="38.27" height="35.43" rx=".95" ry=".95" fill="#58a6ff" fill-opacity="0.18" stroke="none"/>

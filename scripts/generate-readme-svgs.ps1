@@ -410,7 +410,7 @@ $baseLabels = Set-RectLabels -VisualOrderLabels @(
 
 $navLabels = Set-RectLabels -VisualOrderLabels @(
     (One "Tab"), (One (Chr 0x2196)), (One (Chr 0x2191)), (One (Chr 0x2198)), (One "PgUp"), (One "/"), (One "7"), (One "8"), (One "9"), $null,
-    (One "Maj"), (One (Chr 0x2190)), (One (Chr 0x2193)), (One (Chr 0x2192)), (One "PgDn"), (One "-"), (One "4"), (One "5"), (One "6"), (One "0"),
+    (One "Maj"), (One (Chr 0x2190)), (One (Chr 0x2193)), (One (Chr 0x2192)), (One "PgDn"), (One "Ctrl"), (One "4"), (One "5"), (One "6"), (One "0"),
     $null, $null, (One "Vol-"), (One "Mute"), (One "Vol+"), (One (Chr 0x21A4)), (One ","), (One "1"), (One "2"), (One "3"), (One "."), $null,
     $null, $null, $null, $null, $null, $null
 )
